@@ -2,7 +2,7 @@
 
 - Repsonive Design
 - BEM for kode structure
-Javascript functionality 
+- Javascript functionality 
  - Highligther
  - Slideshow
  - Hamburger menu on mobile
