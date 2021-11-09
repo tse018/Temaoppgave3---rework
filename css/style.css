@@ -56,7 +56,7 @@
     }
 
     .navbar__menu {
-        visibility: hidden;
+        display: none;
     }
 
     .navbar__menu.active {
