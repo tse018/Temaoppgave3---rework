@@ -129,11 +129,22 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: introduction 5s;
+    }
+
+    @keyframes introduction {
+        from {
+            top: 0;
+        }
+
+        to {
+            left: 5%;
+        }
     }
 
     .hero__quote {
         position: absolute;
-        top: 50%;
+        bottom: 30%;
         font-size: 40px;
         font-weight: lighter;
         font-style: italic;
@@ -144,11 +155,24 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: fade 15s;
+
+    }
+
+    @keyframes fade {
+
+        from {
+            bottom: -15%;
+        }
+
+        to {
+            bottom: 30%;
+        }
     }
 
     .hero--quote {
         position: absolute;
-        top: 70%;
+        bottom: 25%;
         font-size: 30px;
         font-weight: lighter;
         font-style: italic;
@@ -159,6 +183,18 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: fadeIn 15s;
+    }
+
+    @keyframes fadeIn {
+
+        from {
+            bottom: -25%;
+        }
+
+        to {
+            bottom: 25%;
+        }
     }
 
     .work {
@@ -190,6 +226,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 15s;
         animation: top 10s;
     }
 
@@ -204,6 +241,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 15s;
         animation: bottom 10s;
     }
 
@@ -232,6 +270,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: bottom 20s;
         animation: bottom 10s;
     }
 
@@ -246,7 +285,8 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: top 10s;
+        animation-delay: 10s;
+        animation: bottom 10s;
     }
 
     .work--title:nth-child(6) {
@@ -260,6 +300,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 10s;
         animation: bottom 10s;
     }
 
@@ -274,6 +315,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 10s;
         animation: top 10s;
     }
 
@@ -288,6 +330,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 10s;
         animation: bottom 10s;
     }
 
@@ -302,6 +345,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 10s;
         animation: top 10s;
     }
 
@@ -316,6 +360,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 10s;
         animation: bottom 10s;
     }
 
@@ -330,6 +375,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 10s;
         animation: top 10s;
     }
 
@@ -344,29 +390,29 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation-delay: 10s;
         animation: bottom 10s;
     }
 
     @keyframes top {
         from {
-        top: 0;
+            top: 0;
         }
+
         to {
-        bottom: 0;
+            bottom: 0;
         }
     }
 
-     @keyframes bottom {
+    @keyframes bottom {
         from {
-           bottom: 0;
+            bottom: 0;
         }
+
         to {
-           bottom: 75%;
+            bottom: 75%;
         }
-     }
-
-
-
+    }
 }
 
 
