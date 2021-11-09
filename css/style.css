@@ -1,42 +1,36 @@
 /* Mobile */
 @media screen and (max-width: 600px) {
-
-}
-
-/* Desktop */
-@media screen and (max-width: 960) {
-
-}
-
-
-/* Desktop 1920 x 1020 */
-@media screen and (min-width: 1800px) {
     #mobile-menu {
-        display: none;
+        position: absolute;
+        right: 0;
+        display: block;
+        cursor: pointer;
+        margin: 25px 10px 0 10px;
+        color: white;
     }
 
     #home-page {
         width: 100vw;
-        height: 300vh
+        height: 100vh;
     }
-    
+
     #work-page {
         width: 100vw;
-        height: 400vh;
+        height: 200vh;
     }
-    
+
     #about-page {
         width: 100vw;
         height: 400vh;
         background-color: wheat;
     }
-    
+
     #contact-page {
-        width: 100vw;
-        height: 400vh;
-        background-color: #d9a7c7;
+    width: 100vw;
+    height: 400vh;
+    background-color: #d9a7c7;
     }
-    
+
     #navbar__logo {
         position: absolute;
         background: #EDE574;  /* fallback for old browsers */
@@ -49,34 +43,35 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .navbar {
         position: fixed;
         z-index: 100;
+       background: #0F2027;  /* fallback for old browsers */
+       background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+       background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-size: 1.5rem;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar__menu.active {
+        position: fixed;
+        display: grid;
         background: #0F2027;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        font-size: 1.5rem;
-        width: 99vw;
-        height: 10vh;
+        width: 100%;
+        top: 10%;
+        height: 35vh;
+        text-align: center;
     }
-    
-    /* Får linkene på andre siden */
-    .navbar__container {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    /* få teksten til å være på en lik linje */
-    .navbar__menu {
-        display: flex;
-        margin: 20px 0 0 20px;
-    }
-    
-    /* endrer på selve linkene */
+
     .navbar__link {
-        margin: 10px 20px 0 10px;
-        text-decoration: none;
         background: #d9a7c7;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -84,7 +79,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .scroller {
         height: 100vh;
         width: 100vw;
@@ -92,12 +87,12 @@
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
     }
-    
+
     .scroller section {
         height: 100vh;
         scroll-snap-align: start;
     }
-    
+
     .hero {
         position: relative;
         width: 100vw;
@@ -105,13 +100,15 @@
     }
 
     .hero__image {
-        object-fit: cover;
+        object-fit: fill;
+        width: 100vw;
+        height: 150vh;
     }
-    
+
     .hero__portfolio {
         position: absolute;
-        top: 0;
-        font-size: 450px;
+        top: 20%;
+        font-size: 110px;
         left: 3%;
         background: #373B44;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
@@ -120,11 +117,11 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .hero__name {
         position: absolute;
-        top: 15%;
-        font-size: 400px;
+        top: 25%;
+        font-size: 90px;
         left: 5%;
         background: #0f0c29;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
@@ -133,14 +130,14 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .hero__quote {
         position: absolute;
-        top: 80%;
-        font-size: 60px;
+        top: 50%;
+        font-size: 40px;
         font-weight: lighter;
         font-style: italic;
-        right: 5%;
+        left: 30%;
         background: #360033;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -148,14 +145,14 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .hero--quote {
         position: absolute;
-        top: 87%;
+        top: 70%;
         font-size: 30px;
         font-weight: lighter;
         font-style: italic;
-        right: 6%;
+        left: 55%;
         background: #1e3c72;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -167,19 +164,212 @@
     .work {
         position: relative;
         width: 100vw;
+        height: 200vh;
+        background: #005AA7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-clip: text;
+    }
+
+    .work__image {
+        position: absolute;
+        top: 5%;
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .work__title {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .work--w {
+        position: absolute;
+        top: 10%;
+        font-size: 50px;
+        background: #e52d27;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+/* Macbook */
+@media screen and (min-width: 601px) {
+
+    #mobile-menu {
+        visibility: hidden;
+    }
+
+    #home-page {
+        width: 100vw;
+        height: 300vh;
+    }
+
+    #work-page {
+        width: 100vw;
+        height: 400vh;
+    }
+
+    #about-page {
+        width: 100vw;
+        height: 400vh;
+        background-color: wheat;
+    }
+
+    #contact-page {
+    width: 100vw;
+    height: 400vh;
+    background-color: #d9a7c7;
+    }
+
+    #navbar__logo {
+        position: absolute;
+        background: #EDE574;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-size: 2rem;
+        height: 2.5rem;
+        margin: 20px 0 0 20px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 100;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-size: 1.5rem;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    /* Får linkene på andre siden */
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* få teksten til å være på en lik linje */
+    .navbar__menu {
+        display: flex;
+        margin: 20px 0 0 20px;
+    }
+
+    /* endrer på selve linkene */
+    .navbar__link {
+        margin: 10px 20px 0 10px;
+        text-decoration: none;
+        background: #d9a7c7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .scroller {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: y proximity;
+    }
+
+    .scroller section {
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+    .hero {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hero__image {
+        object-fit: cover;
+    }
+
+    .hero__portfolio {
+        position: absolute;
+        top: 20%;
+        font-size: 300px;
+        left: 3%;
+        background: #373B44;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero__name {
+        position: absolute;
+        top: 35%;
+        font-size: 250px;
+        left: 5%;
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero__quote {
+        position: absolute;
+        top: 80%;
+        font-size: 40px;
+        font-weight: lighter;
+        font-style: italic;
+        right: 5%;
+        background: #360033;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero--quote {
+        position: absolute;
+        top: 87%;
+        font-size: 30px;
+        font-weight: lighter;
+        font-style: italic;
+        right: 10%;
+        background: #1e3c72;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+
+    .work {
+        position: relative;
+        width: 100vw;
         height: 400vh;
         background: #005AA7;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background-clip: text;
     }
-    
+
     .work__image {
         position: absolute;
         width: 100vw;
         height: 100vh;
     }
-    
+
     .work__title {
         position: absolute;
         bottom: 50%;
@@ -202,6 +392,9 @@
         background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
 }
+
+/* Desktop - big screen */
