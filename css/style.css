@@ -190,7 +190,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: top 5s;
+        animation: top 10s;
     }
 
     .work--title:nth-child(2) {
@@ -204,7 +204,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: bottom 5s;
+        animation: bottom 10s;
     }
 
     .work--title:nth-child(3) {
@@ -218,7 +218,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: top 5s;
+        animation: top 10s;
     }
 
     .work--title:nth-child(4) {
@@ -232,7 +232,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: bottom 5s;
+        animation: bottom 10s;
     }
 
     .work--title:nth-child(5) {
@@ -246,7 +246,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: top 5s;
+        animation: top 10s;
     }
 
     .work--title:nth-child(6) {
@@ -260,7 +260,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: bottom 5s;
+        animation: bottom 10s;
     }
 
     .work--title:nth-child(7) {
@@ -274,7 +274,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: top 5s;
+        animation: top 10s;
     }
 
     .work--title:nth-child(8) {
@@ -288,7 +288,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: bottom 5s;
+        animation: bottom 10s;
     }
 
     .work--title:nth-child(9) {
@@ -302,7 +302,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: top 5s;
+        animation: top 10s;
     }
 
     .work--title:nth-child(10) {
@@ -316,7 +316,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: bottom 5s;
+        animation: bottom 10s;
     }
 
     .work--title:nth-child(11) {
@@ -330,7 +330,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: top 5s;
+        animation: top 10s;
     }
 
     .work--title:nth-child(12) {
@@ -344,7 +344,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: bottom 5s;
+        animation: bottom 10s;
     }
 
     @keyframes top {
