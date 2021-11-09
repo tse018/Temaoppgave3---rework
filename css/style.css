@@ -56,7 +56,7 @@
     }
 
     .navbar__menu {
-        display: none;
+        visibility: hidden;
     }
 
     .navbar__menu.active {
@@ -405,7 +405,7 @@
 }
 
 /* Macbook */
-@media screen and (max-width: 1800px) {
+@media screen and (min-width: 801px) {
 
     #mobile-menu {
         visibility: hidden;
@@ -616,24 +616,24 @@
         width: 100vw;
         height: 300vh
     }
-    
+
     #work-page {
         width: 100vw;
         height: 400vh;
     }
-    
+
     #about-page {
         width: 100vw;
         height: 400vh;
         background-color: wheat;
     }
-    
+
     #contact-page {
         width: 100vw;
         height: 400vh;
         background-color: #d9a7c7;
     }
-    
+
     #navbar__logo {
         position: absolute;
         background: #EDE574;  /* fallback for old browsers */
@@ -646,7 +646,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .navbar {
         position: fixed;
         z-index: 100;
@@ -663,13 +663,13 @@
         display: flex;
         justify-content: space-between;
     }
-    
+
     /* få teksten til å være på en lik linje */
     .navbar__menu {
         display: flex;
         margin: 20px 0 0 20px;
     }
-    
+
     /* endrer på selve linkene */
     .navbar__link {
         margin: 10px 20px 0 10px;
@@ -681,7 +681,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .scroller {
         height: 100vh;
         width: 100vw;
@@ -689,12 +689,12 @@
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
     }
-    
+
     .scroller section {
         height: 100vh;
         scroll-snap-align: start;
     }
-    
+
     .hero {
         position: relative;
         width: 100vw;
@@ -704,7 +704,7 @@
     .hero__image {
         object-fit: cover;
     }
-    
+
     .hero__portfolio {
         position: absolute;
         top: 0;
@@ -717,7 +717,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .hero__name {
         position: absolute;
         top: 15%;
@@ -730,7 +730,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .hero__quote {
         position: absolute;
         top: 80%;
@@ -745,7 +745,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     .hero--quote {
         position: absolute;
         top: 87%;
@@ -770,13 +770,13 @@
         background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background-clip: text;
     }
-    
+
     .work__image {
         position: absolute;
         width: 100vw;
         height: 100vh;
     }
-    
+
     .work__title {
         position: absolute;
         bottom: 50%;
