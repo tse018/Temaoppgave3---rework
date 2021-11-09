@@ -1,5 +1,5 @@
 /* Mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #mobile-menu {
         position: absolute;
         right: 0;
@@ -226,8 +226,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 15s;
-        animation: top 10s;
+        animation: top 27s;
     }
 
     .work--title:nth-child(2) {
@@ -241,8 +240,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 15s;
-        animation: bottom 10s;
+        animation: bottom 27s;
     }
 
     .work--title:nth-child(3) {
@@ -256,7 +254,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: top 10s;
+        animation: top 27s;
     }
 
     .work--title:nth-child(4) {
@@ -270,8 +268,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: bottom 20s;
-        animation: bottom 10s;
+        animation: bottom 27s;
     }
 
     .work--title:nth-child(5) {
@@ -285,8 +282,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 10s;
-        animation: bottom 10s;
+        animation: top 27s;
     }
 
     .work--title:nth-child(6) {
@@ -300,8 +296,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 10s;
-        animation: bottom 10s;
+        animation: bottom 27s;
     }
 
     .work--title:nth-child(7) {
@@ -315,8 +310,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 10s;
-        animation: top 10s;
+        animation: top 27s;
     }
 
     .work--title:nth-child(8) {
@@ -330,8 +324,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 10s;
-        animation: bottom 10s;
+        animation: bottom 27s;
     }
 
     .work--title:nth-child(9) {
@@ -345,8 +338,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 10s;
-        animation: top 10s;
+        animation: top 27s;
     }
 
     .work--title:nth-child(10) {
@@ -360,8 +352,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 10s;
-        animation: bottom 10s;
+        animation: bottom 27s;
     }
 
     .work--title:nth-child(11) {
@@ -375,8 +366,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 10s;
-        animation: top 10s;
+        animation: top 27s;
     }
 
     .work--title:nth-child(12) {
@@ -390,8 +380,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation-delay: 10s;
-        animation: bottom 10s;
+        animation: bottom 27s;
     }
 
     @keyframes top {
@@ -415,10 +404,8 @@
     }
 }
 
-
-
 /* Macbook */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 800px) {
 
     #mobile-menu {
         visibility: hidden;
