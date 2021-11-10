@@ -614,7 +614,7 @@
 
     #home-page {
         width: 100vw;
-        height: 300vh
+        height: 280vh
     }
 
     #work-page {
@@ -703,6 +703,7 @@
 
     .hero__image {
         object-fit: cover;
+        height: 280vh;
     }
 
     .hero__portfolio {
