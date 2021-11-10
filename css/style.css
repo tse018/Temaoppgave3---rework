@@ -1,4 +1,4 @@
-/* Mobile */
+/********** Mobile screen size ****************/
 @media screen and (max-width: 800px) {
     #mobile-menu {
         position: absolute;
@@ -55,10 +55,12 @@
         height: 10vh;
     }
 
+    /** show navbar icon instead of text **/
     .navbar__menu {
         display: none;
     }
 
+    /** when clicked on navbar menu, shows this code **/
     .navbar__menu.active {
         position: fixed;
         display: grid;
@@ -160,7 +162,6 @@
     }
 
     @keyframes fade {
-
         from {
             bottom: -15%;
         }
@@ -187,7 +188,6 @@
     }
 
     @keyframes fadeIn {
-
         from {
             bottom: -25%;
         }
@@ -404,7 +404,7 @@
     }
 }
 
-/* Macbook */
+/*********** Macbook display size *****************/
 @media screen and (min-width: 801px) {
 
     #mobile-menu {
@@ -457,13 +457,13 @@
         height: 10vh;
     }
 
-    /* Får linkene på andre siden */
+    /** Får linkene på andre siden **/
     .navbar__container {
         display: flex;
         justify-content: space-between;
     }
 
-    /* få teksten til å være på en lik linje */
+    /** få teksten til å være på en lik linje **/
     .navbar__menu {
         display: flex;
         margin: 20px 0 0 20px;
@@ -606,7 +606,7 @@
     }
 }
 
-/* Home desktop 1920 x 1020 */
+/********** Home desktop 1920 x 1020 *************/
 @media screen and (min-width: 1800px) {
     #mobile-menu {
         visibility: hidden;
