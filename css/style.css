@@ -2,8 +2,8 @@
 @media screen and (max-width: 800px) {
     #mobile-menu {
         position: absolute;
-        right: 0;
         display: block;
+        right: 0;
         cursor: pointer;
         margin: 25px 10px 0 10px;
         color: white;
@@ -47,9 +47,9 @@
     .navbar {
         position: fixed;
         z-index: 100;
-       background: #0F2027;  /* fallback for old browsers */
-       background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-       background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         font-size: 1.5rem;
         width: 100vw;
         height: 10vh;
@@ -118,6 +118,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: introduction 20s;
     }
 
     .hero__name {
@@ -131,16 +132,16 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: introduction 5s;
+        animation: introduction 10s;
     }
 
     @keyframes introduction {
         from {
-            top: 0;
+            left: 0;
         }
 
         to {
-            left: 5%;
+            right: 5%;
         }
     }
 
@@ -500,9 +501,8 @@
     }
 
     .hero__image {
-        object-fit: cover;
         width: 100vw;
-        height: 300vh;
+        height: 100vh;
     }
 
     .hero__portfolio {
@@ -590,6 +590,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
 
     .work--title {
         position: absolute;
