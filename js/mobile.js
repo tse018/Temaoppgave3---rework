@@ -1,14 +1,13 @@
 const button = document.getElementById('mobile-menu');
 const navbarMenu = document.querySelector('.navbar__menu');
 
-
 /***** Model ******/
 const navbar = {
    showMenu: false,
    notShowMenu: true
 };
 
-/******* View *********/
+/******* View *******/
 function updateView() {
    if(navbar.showMenu ===  true) {
       navbarMenu.classList.remove('active')
@@ -25,7 +24,3 @@ function clickedOnNavbar() {
 
 /**** addEventListener *********/
 button.addEventListener('click', clickedOnNavbar)
-
-
-
-
