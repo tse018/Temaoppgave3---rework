@@ -107,7 +107,6 @@ function renderImages() {
    images.innerHTML = "";
 
    galleryImages.images.forEach((image, index) => {
-      let figureParent = document.createElement("section")
       let figureElement = document.createElement("figure");
       let figcaptionElement = document.createElement("figcaption");
       let imgElement = document.createElement("img");
@@ -121,16 +120,14 @@ function renderImages() {
       figureElement.appendChild(figcaptionElement);
       figureElement.className = "work__galleryshow--images";
 
-      images.appendChild(figureParent);
-      figureParent.appendChild(figureElement);
-
+      images.appendChild(figureElement);
    });
 }
 
 renderImages();
 
 /***** Horizontal Auto scrolling *****************/
-const galleryShowcase = document.querySelector(".work__gallery__showcase");
+const galleryShowcase = document.querySelector(".work__galleryshow");
 const galleryScrollWidth = galleryShowcase.scrollWidth;
 
 window.addEventListener("load", () => {
