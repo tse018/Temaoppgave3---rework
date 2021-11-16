@@ -1,26 +1,26 @@
 const button = document.getElementById('mobile-menu');
-const navbarMenu = document.querySelector('.navbar__menu');
+const navBarMenu = document.querySelector('.navbar__menu');
 
 /***** Model ******/
-const navbar = {
+const navBar = {
    showMenu: false,
    notShowMenu: true
 };
 
 /******* View *******/
 function updateView() {
-   if(navbar.showMenu ===  true) {
-      navbarMenu.classList.remove('active')
+   if(navBar.showMenu ===  true) {
+      navBarMenu.classList.remove('active')
    } else {
-      navbarMenu.classList.add('active')
+      navBarMenu.classList.add('active')
    }
 };
 
 /****** Controller *******/
-function clickedOnNavbar() {
-   navbar.showMenu = !navbar.showMenu;
+function clickedOnNavBar() {
+   navBar.showMenu = !navBar.showMenu;
    updateView();
 }
 
 /**** addEventListener *********/
-button.addEventListener('click', clickedOnNavbar)
+button.addEventListener('click', clickedOnNavBar)
