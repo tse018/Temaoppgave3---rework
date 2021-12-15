@@ -1,4 +1,4 @@
-/********** Mobile screen size ****************/
+/********** Mobile screen size - most compile with 6.7 inches screen size ****************/
 @media screen and (max-width: 800px) {
     #mobile-menu {
         position: absolute;
@@ -14,7 +14,7 @@
         background: #EDE574;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        font-size: 2rem;
+        font-size: 32px;
         height: 2.5rem;
         margin: 20px 0 0 20px;
         -webkit-background-clip: text;
@@ -28,7 +28,7 @@
         background: #0F2027;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        font-size: 1.5rem;
+        font-size: 24px;
         width: 100vw;
         height: 10vh;
     }
@@ -60,6 +60,20 @@
         -webkit-text-fill-color: transparent;
     }
 
+    /****** Universal scrolling behavior - fixed scrolling points *******/
+    .scroller {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+
+    .scroller section {
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
     .hero {
         position: relative;
         width: 100vw;
@@ -67,7 +81,7 @@
     }
 
     .hero__image {
-        object-fit: fill;
+        object-fit: cover;
         width: 100vw;
         height: 100vh;
     }
@@ -162,9 +176,10 @@
         }
     }
 
+    /******** Work section ********/
     .work {
         position: relative;
-        height: 120vh;
+        height: 100vh;
         width: 100vw;
         overflow: scroll;
     }
@@ -172,61 +187,136 @@
     .work__background {
         width: 100vw;
         height: 50vh;
+        margin-top: 50px;
     }
 
     .work__title {
         position: absolute;
-        top: 430px;
-        padding: 0 0 100px 20px;
+        top: 500px;
+        padding: 0 0 0 45px;
         font-size: 40px;
-        text-align: center;
     }
 
     .work__galleryshow {
         position: absolute;
-        top: 500px;
+        top: 570px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
         overflow: scroll;
     }
 
-    .work__image {
-        width: 450px;
-        height: 300px;
-        object-fit: fill;
+    .work__caption {
+        text-align: center;
+        margin: 10px 0 10px 0;
+        font-style: italic;
     }
 
+    .work__image {
+        height: 300px;
+    }
+
+    /****** About section **********/
     .about {
         position: relative;
         width: 100vw;
         height: 100vh;
-        margin-top: 55px;
-    }
-
-    .about__title {
-        position: relative;
-        font-size: 57px;
-        top: 2%;
-        left: 15%;
     }
 
     .about__image {
-        position: absolute;
-        width: 86vw;
+        width: 100vw;
         height: 60vh;
-        left: 15%;
     }
 
-    .about__quote {
-        position: absolute;
-        bottom: 23%;
-        left: 50%;
-        right: 50%;
-        font-size: 26px;
-    }   
-}
+    .about__title {
+        font-size: 57px;
+        top: 2%;
+        margin-left: 25px;
+    }
 
+    .about__text {
+        margin: 0 25px 0 25px ;
+    }
+
+    /******** Contact Section **********/
+    .contact {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .contact__banner {
+        position: absolute;
+        margin-top: 25px;
+        right: 0;
+        width: 60vw;
+        height: 80vh;
+    }
+
+    .contact__form {
+        position: absolute;
+        left: 0;
+        top: 120px;
+        width: 40vw;
+    }
+
+    .contact__field {
+        border: 2px solid gray;
+    }
+
+    .contact__title {
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+    .contact__label-name {
+        font-size: 30px;
+    }
+
+    .contact__input-name {
+        font-size: 30px;
+        width: 38vw;
+    }
+
+    .contact__label-mail {
+        font-size: 30px;
+    }
+
+    .contact__input-mail {
+        font-size: 30px;
+        width: 38vw;
+    }
+
+    .contact__label-message {
+        font-size: 30px;
+    }
+
+    .contact__input-message {
+        padding: 0 40px 100px 0;
+    }
+
+      /********* Footer ****************/
+    .footer {
+        position: relative;
+        top: -200px;
+        width: 300px;
+        height: 100px;
+    }
+
+    .footer__list {
+        display: flex;
+    }
+
+    .footer__item {
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .footer__rigths {
+        margin: 25px 0 0 10px;
+        font-style: italic;
+    }
+}
 
 /*********** Desktop display size *****************/
 @media screen and (min-width: 801px) {
@@ -259,13 +349,13 @@
         height: 10vh;
     }
 
-    /** Får linkene på andre siden **/
+    /** gets the navbar on other side **/
     .navbar__container {
         display: flex;
         justify-content: space-between;
     }
 
-    /** få teksten til å være på en lik linje **/
+    /** get to be on equal lines **/
     .navbar__menu {
         display: flex;
         margin: 20px 0 0 20px;
@@ -486,8 +576,8 @@
             margin-left: 10px;
         }
 
-        .contact__input-text {
-            padding-left: 10px;
+        .contact__input-message {
+            padding: 0 0 80px 10px ;
         }
 
         /********* Footer ****************/
