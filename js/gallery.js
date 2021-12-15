@@ -90,13 +90,15 @@ function renderImages() {
 
    images.innerHTML = "";
 
-   galleryImages.images.forEach((image, index) => {
+   galleryImages.images.forEach((image) => {
       let figureElement = document.createElement("figure");
       let figcaptionElement = document.createElement("figcaption");
       let imgElement = document.createElement("img");
 
       imgElement.src = image.img;
       imgElement.alt = image.caption;
+
+      imgElement.setAttribute("alt", "bilde av " + imgElement.alt)
 
       figcaptionElement.innerText = image.caption;
 

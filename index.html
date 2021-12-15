@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <title>Portfolio</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -13,35 +12,35 @@
     <body>
         <header class="navbar">
             <div class="navbar__container">
-                <div class="navbar__toggle" id="mobile-menu">
+                <div class="navbar__toggle" id="mobile-menu" aria-label="click to open menu and select which section you want to see">
                     <i class="fas fa-bars"></i>
                 </div>
 
-                <a href="#about-page" id="navbar__logo">
+                <a href="#about-page" id="navbar__logo" aria-label="click here to read about this person">
                     Name
                 </a>
 
                 <ul class="navbar__menu">
                     <li class="navbar__item">
-                        <a href="#home-page" class="navbar__link">
+                        <a href="#home-page" class="navbar__link" aria-label="click here to go back to top">
                             Home
                         </a>
                     </li>
 
                     <li class="navbar__item">
-                        <a href="#work-page" class="navbar__link">
+                        <a href="#work-page" class="navbar__link" aria-label="click here to see what work he has done ">
                             Work
                         </a>
                     </li>
 
                     <li class="navbar__item">
-                        <a href="#about-page" class="navbar__link">
+                        <a href="#about-page" class="navbar__link" aria-label="click here to read about this person">
                             About
                         </a>
                     </li>
 
                     <li class="navbar__item">
-                        <a href="#contact-page" class="navbar__link">
+                        <a href="#contact-page" class="navbar__link" aria-label="click here to get in touch">
                             Contact
                         </a>
                     </li>
@@ -52,7 +51,7 @@
         <div class="scroller">
             <section id="home-page">
                 <div class="hero">
-                    <img src="assets/hero-banner.jpg" class="hero__image" alt="">
+                    <img src="assets/hero-banner.jpg" class="hero__image" alt="white and gray color lines background image">
 
                     <h1 class="hero__portfolio">
                         Portfolio
@@ -70,21 +69,29 @@
                         </h3>
 
                     </h3>
-
                 </div>
             </section>
 
             <section id="work-page">
                 <div class="work">
-
                     <h2 class="work__title">
                         WORK SHOWCASE
                     </h2>4
 
-                    <img src="assets/bilde1.jpg" class="work__background" alt="">
+                    <img src="assets/bilde1.jpg" class="work__background" alt="three faces where middle face eye is covered by hands, wall painting">
                     
                     <main class="work__galleryshow">
-                        <!-- rendering images from gallery.js -->
+                        <!-- rendering images from gallery.js
+
+                            <figure class="work__figure">
+                                <img src="assets/bilde2.jpg" alt="Cosmic" class="work__image">
+                                
+                                <figcaption class="work__caption">
+                                    Cosmic
+                                </figcaption>
+
+                            </figure>
+                        -->
                     </main> 
                 </div>
             </section>
@@ -92,19 +99,18 @@
             <section id="about-page">
                 <div class="about">
                     <div class="about__image">
-                        <img src="assets/about_background.jpeg" class="about__image" alt="">
+                        <img src="assets/about_background.jpeg" class="about__image" alt="image about a person looking at paintings hanging in the walls">
                     </div>
 
                     <div class="about__container">
                         <h2 class="about__title">
                             MY JOURNEY
                         </h2>
-    
+
                         <p class="about__text">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis quas est maiores. Ipsa tempora possimus ut ex ad laborum ducimus beatae maxime sint dolor obcaecati, quidem odit quibusdam nobis corrupti!
                         </p>
                     </div>
-
                 </div>
             </section>
 
@@ -140,20 +146,19 @@
                 </div>
             </section>
 
-
             <footer class="footer">
                 <div class="footer__information">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <i class="fab fa-linkedin fa-3x"></i>
+                            <i class="fab fa-linkedin fa-3x" aria-label="click here to open linked in profile"></i>
                         </li>
 
                         <li class="footer__item">
-                            <i class="fab fa-instagram fa-3x"></i>
+                            <i class="fab fa-instagram fa-3x" aria-label="click here to open instagram profile"></i>
                         </li>
 
                         <li class="footer__item">
-                            <i class="fab fa-facebook-square fa-3x"></i>
+                            <i class="fab fa-facebook-square fa-3x" aria-label="click here to open facebook"></i>
                         </li>
                     </ul>
 
